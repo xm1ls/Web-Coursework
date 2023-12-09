@@ -1,5 +1,91 @@
-span {
-    width: 100px;
-    height: 100px;
-    background-color: red;
+.achievements {
+    background: var(--neutral-silver, #F5F7FA);
+    margin-bottom: 33.41px;
+
+    &__inner {
+        max-width: 850px;
+        margin: 0 auto;
+        padding: 44.55px 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__heading {
+        display: flex;
+        width: 375.878px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5.569px;
+    }
+
+    &__heading-text {
+        width: 283.996px;
+        color: var(--neutral-d-grey, #4D4D4D);
+        font-family: Inter;
+        font-size: 25.059px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30.627px;
+
+        span {
+            color: var(--brand-primary, #4CAF4F);
+            font-family: Inter;
+            font-size: 25.059px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 30.627px;
+        }
+    }
+
+    &__heading-description {
+        color: var(--text-gray-900, #18191F);
+        font-family: Inter;
+        font-size: 11.137px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16.706px;
+        align-self: stretch;
+    }
+
+    &__counts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 27.843px;
+    }
+
+    &__counts-row {
+        display: flex;
+        align-items: center;
+        gap: 20.882px;
+    }
+
+    &__counts-group {
+        display: flex;
+        align-items: center;
+        gap: 11.137px;
+    }
+
+    &__counts-text {
+        h2 {
+            width: 132.949px;
+            color: var(--neutral-d-grey, #4D4D4D);
+            font-family: Inter;
+            font-size: 19.49px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 25.059px;
+        }
+
+        p {
+            width: 132.949px;
+            color: var(--neutral-grey, #717171);
+            font-family: Inter;
+            font-size: 11.137px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16.706px;
+        }
+    }
 }
