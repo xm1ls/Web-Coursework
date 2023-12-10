@@ -2,10 +2,8 @@
 
 .community {
     background-color: v.getColor(neatural-white);
-
     &__inner {
-        padding: 0 30px;
-        padding-bottom: 42px;
+        padding: 0 30px 42px;
     }
 
     &__text {
@@ -96,6 +94,7 @@
             margin: 0 auto;
             width: 1200px;
             padding: 0 24px;
+            padding-bottom: 42px;
         }
 
         &__list {
