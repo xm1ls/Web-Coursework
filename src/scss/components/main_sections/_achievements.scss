@@ -1,91 +1,143 @@
+@use '../../utils/variables' as v;
+
 .achievements {
-    background: var(--neutral-silver, #F5F7FA);
-    margin-bottom: 33.41px;
+    background-color: v.getColor(neatural-silver);
 
     &__inner {
-        max-width: 850px;
-        margin: 0 auto;
-        padding: 44.55px 24px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        padding: 30px;
     }
 
-    &__heading {
-        display: flex;
-        width: 375.878px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5.569px;
+    &__text {
+        text-align: center;
     }
 
-    &__heading-text {
-        width: 283.996px;
-        color: var(--neutral-d-grey, #4D4D4D);
-        font-family: Inter;
-        font-size: 25.059px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 30.627px;
+    &__title {
+        margin-bottom: 8px;
 
-        span {
-            color: var(--brand-primary, #4CAF4F);
-            font-family: Inter;
-            font-size: 25.059px;
+        &-text {
+            color: v.getColor(neatural-d-grey);
+            font-size: 36px;
             font-style: normal;
             font-weight: 600;
-            line-height: 30.627px;
+            line-height: 44px;
+
+            &--accent {
+                color: v.getColor(brand-primary);
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 44px;
+            }
         }
     }
 
-    &__heading-description {
-        color: var(--text-gray-900, #18191F);
-        font-family: Inter;
-        font-size: 11.137px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 16.706px;
-        align-self: stretch;
+    &__description {
+        margin-bottom: 16px;
+
+        &-text {
+            color: v.getColor(neatural-grey);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+        }
     }
 
-    &__counts {
+    &__list {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 27.843px;
+        gap: 16px;
     }
 
-    &__counts-row {
+    &__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__item {
         display: flex;
         align-items: center;
-        gap: 20.882px;
-    }
+        gap: 16px;
 
-    &__counts-group {
-        display: flex;
-        align-items: center;
-        gap: 11.137px;
-    }
+        // &-image { }
 
-    &__counts-text {
-        h2 {
-            width: 132.949px;
-            color: var(--neutral-d-grey, #4D4D4D);
-            font-family: Inter;
-            font-size: 19.49px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 25.059px;
+        &-text {
+            width: 191px;
         }
 
-        p {
-            width: 132.949px;
-            color: var(--neutral-grey, #717171);
-            font-family: Inter;
-            font-size: 11.137px;
+        &-description {
+            color: v.getColor(neatural-grey);
+            font-size: 16px;
             font-style: normal;
             font-weight: 400;
-            line-height: 16.706px;
+            line-height: 24px;
+        }
+    }
+
+    &__count {
+        color: v.getColor(neatural-d-grey);
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36px;
+    }
+}
+
+@media (min-width: 768px) {
+    .achievements {
+    
+        &__list {
+            flex-direction: column;
+            justify-content: flex-start;
+        }    
+        
+        &__row {
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .achievements {
+    
+        &__inner {
+            padding: 64px 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__text {
+            max-width: 540px;
+            text-align: start;
+            align-self: center;
+        }
+
+        &__description {
+            margin-bottom: 0;
+        }
+
+        &__list {
+            gap: 40px
+        }
+
+        &__row {
+            gap: 30px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .achievements {
+
+        &__inner {
+            margin: 0 auto;
+            width: 1200px;
+            padding: 64px 24px;
         }
     }
 }
