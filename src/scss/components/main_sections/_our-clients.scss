@@ -8,9 +8,8 @@
     }
 
     &__text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: block;
+        text-align: center;
     }
 
     &__title {
@@ -38,6 +37,7 @@
     }
 
     &__list {
+        min-height: 98px;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;        
