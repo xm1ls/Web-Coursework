@@ -74,7 +74,7 @@
     .hero {
         &__inner {
             display: flex;
-            gap: 2%;
+            gap: 5%;
         }
 
         &__title-text {
@@ -84,7 +84,7 @@
 
         &__illustration {
             display: flex;
-            min-width: 30%;
+            min-width: 40%;
         }
 
         &__button {
@@ -111,10 +111,6 @@
         &__title-text {
             font-size: 64px;
             line-height: 76px;
-        }
-
-        &__illustration {
-            min-width: 40%;
         }
 
         &__button {
