@@ -89,6 +89,10 @@
 @media (min-width: 768px) {
     .achievements {
     
+        &__description {
+            margin-bottom: 32px;
+        }
+
         &__list {
             flex-direction: column;
             justify-content: flex-start;
