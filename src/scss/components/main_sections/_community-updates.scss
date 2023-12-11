@@ -76,19 +76,19 @@
 
         &:nth-child(1) {
             .community-updates__image {
-                background-image: url("/img/community-updates.jpg");
+                background-image: url("../img/community-updates.jpg");
             }
         }
 
         &:nth-child(2) {
             .community-updates__image {
-                background-image: url("/img/community-updates-1.jpg");
+                background-image: url("../img/community-updates-1.jpg");
             }
         }
 
         &:nth-child(3) {
             .community-updates__image {
-                background-image: url("/img/community-updates-2.jpg");
+                background-image: url("../img/community-updates-2.jpg");
             }
         }
     }
@@ -149,7 +149,7 @@
 
 @media (min-width: 1200px) {
     .community-updates {
-        
+
         &__inner {
             margin: 0 auto;
             width: 1200px;
