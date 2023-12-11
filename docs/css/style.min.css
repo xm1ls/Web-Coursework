@@ -677,7 +677,7 @@ button {
   max-width: 326px;
   height: 326px;
   border-radius: 8px;
-  background: url("../img/brand.jpg"), lightgray 50%/cover no-repeat;
+  background: url("/img/brand.jpg"), lightgray 50%/cover no-repeat;
   background-position: center;
   background-size: cover;
   box-shadow: 0px 8px 16px 0px rgba(171, 190, 209, 0.4);
@@ -861,13 +861,13 @@ button {
   line-height: 28px;
 }
 .community-updates__item:nth-child(1) .community-updates__image {
-  background-image: url("../img/community-updates.jpg");
+  background-image: url("/img/community-updates.jpg");
 }
 .community-updates__item:nth-child(2) .community-updates__image {
-  background-image: url("../img/community-updates-1.jpg");
+  background-image: url("/img/community-updates-1.jpg");
 }
 .community-updates__item:nth-child(3) .community-updates__image {
-  background-image: url("../img/community-updates-2.jpg");
+  background-image: url("/img/community-updates-2.jpg");
 }
 .community-updates__image {
   width: 100%;
