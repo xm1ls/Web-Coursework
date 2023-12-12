@@ -925,9 +925,9 @@ button {
 }
 .footer__text-wrapper {
   background-color: #F5F7FA;
-  padding: 30px;
 }
 .footer__text {
+  padding: 30px;
   text-align: center;
 }
 .footer__title {
@@ -960,14 +960,15 @@ button {
 }
 .footer__content-wrapper {
   background-color: #263238;
-  padding: 48px 30px;
 }
 .footer__content {
+  padding: 48px 30px;
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 .footer__info {
+  max-width: 350px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -994,11 +995,13 @@ button {
   gap: 16px;
 }
 .footer__links {
+  width: fit-content;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 32px;
 }
 .footer__company {
+  width: 160px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -1023,6 +1026,7 @@ button {
   line-height: 20px;
 }
 .footer__support {
+  width: 160px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -1050,8 +1054,10 @@ button {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  max-width: 255px;
 }
 .footer__email-title {
+  max-width: 160px;
   color: #FFF;
   font-size: 20px;
   font-style: normal;
@@ -1062,12 +1068,13 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 255px;
   padding: 10px 12px;
   border-radius: 8px;
   background-color: #36464e;
+  min-width: 172px;
 }
 .footer__input-field {
+  min-width: 130px;
   border: none;
   outline: none;
   background-color: transparent;
@@ -1087,10 +1094,18 @@ button {
 .footer__input-button {
   background-color: transparent;
 }
+.footer__input-button-image {
+  min-width: 18px;
+}
 
 @media (min-width: 768px) {
   .footer__text-wrapper {
     padding: 32px 30px;
+  }
+  .footer__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .footer__title {
     max-width: 887px;
@@ -1099,11 +1114,62 @@ button {
     font-size: 64px;
     line-height: 76px;
   }
-  .footer__content-wrapper {
+  .footer__content {
     padding: 64px 30px;
+    display: grid;
+    grid-template-areas: "info info" "links email";
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    gap: 32px;
+  }
+  .footer__links {
+    grid-area: links;
+  }
+  .footer__email {
+    grid-area: email;
+    margin-left: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .footer__content {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
+  .footer__info {
+    gap: 40px;
+  }
+  .footer__links {
+    margin-left: auto;
+    gap: 30px;
+  }
+  .footer__email {
+    margin-left: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__text {
+    margin: 0 auto;
+    width: 1200px;
+    padding: 32px 24px;
+  }
+  .footer__content {
+    margin: 0 auto;
+    width: 1200px;
+    padding: 64px 24px;
   }
   .footer__content {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0;
+  }
+  .footer__info {
+    width: 350px;
+  }
+  .footer__links {
+    margin-left: auto;
+  }
+  .footer__email {
+    margin-left: 30px;
   }
 }
