@@ -1,75 +1,116 @@
+@use '../utils/variables' as v;
+
 .header {
-    background: var(--neutral-white, #FFF);
-    box-shadow: 0px 2.78428px 5.56856px 0px rgba(171, 190, 209, 0.40);
+    background-color: v.getColor(neatural-silver);
 
     &__inner {
-        max-width: 850px;
-        padding: 11px 24px;
+        height: 84px;
+        padding: 0 30px;
         display: flex;
         justify-content: space-between;
-        margin: 0 auto;
+        align-items: center;
     }
-}
 
-.logo {
-    display: flex;
-    gap: 5.57px;
-    cursor: pointer;
-}
+    &__logo {
+        max-width: 154px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
 
-.nav-menu {
-    margin: 0 22.27px 0 auto;
+    &__menu {
+        display: none;
 
-    &__btn-list {
-        gap: 16.71px;
+        &-list {
+            display: flex;
+            gap: 30px;
+        }
 
-        :first-child {
-            margin-right: 23.5px;
+        // &-item { }
+
+        &-link {
+            color: v.getColor(neatural-black);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
         }
     }
 
-    &__item {
-        color: var(--neutral-d-grey, #4D4D4D);
-        text-align: center;
-        font-family: Inter;
-        font-size: 11.137px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 16.706px;
-        padding: 10px 0;
-        cursor: pointer;
-        transition: color .3s ease-in-out;
+    &__button-wrapper {
+        display: none;
+        align-items: center;
+        gap: 14px;
+        text-wrap: nowrap;
     }
 
-    :hover,
-    :focus {
-        transition: color .3s ease-in-out;
-        color: var(--brand-primary, #4CAF4F);
+    &__button--login {
+        display: flex;
+        padding: 10px 20px;
+        align-items: center;
+        gap: 10px;
+        border-radius: 6px;
+        background-color: transparent;
+        color: v.getColor(brand-primary);
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+    &__button--signup {
+        display: flex;
+        padding: 10px 20px;
+        align-items: center;
+        gap: 10px;
+        border-radius: 6px;
+        background: v.getColor(brand-primary);
+        color: v.getColor(neatural-white);
+        text-align: center;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
     }
 }
 
-.btn-list {
-    display: flex;
-    list-style-type: none;
+@media (min-width: 768px) {
+    .header {
+
+        &__button-wrapper {
+            display: flex;
+        }
+    }
 }
 
-.register-button {
-    display: flex;
-    padding: 9.745px 22.274px;
-    justify-content: center;
-    align-items: center;
-    gap: 5.569px;
-    border-radius: 2.784px;
-    background-color: var(--brand-primary, #4CAF4F);
-    cursor: pointer;
+@media (min-width: 1024px) {
+    .header {
 
-    &__title {
-        color: var(--neutral-white, #FFF);
-        text-align: center;
-        font-family: Inter;
-        font-size: 11.137px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 16.706px;
+        &__menu {
+            display: flex;
+
+            &-list {
+                justify-content: center;
+                align-items: center;
+            }
+
+        }
+    }
+}
+
+@media (min-width: 1263px) {
+    .header {
+
+        &__inner {
+            margin: 0 auto;
+            width: 1263px;
+            padding: 0px 24px;
+        }
+
+        &__menu-list {
+            gap: 50px
+        }
     }
 }

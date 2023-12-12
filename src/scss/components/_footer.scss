@@ -5,7 +5,7 @@
     &__text-wrapper {
         background-color: v.getColor(neatural-silver);
     }
-    
+
     &__text {
         padding: 30px;
         text-align: center;
@@ -24,6 +24,7 @@
     }
 
     &__button {
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -46,7 +47,7 @@
     &__content-wrapper {
         background-color: v.getColor(neatural-black);
     }
-    
+
     &__content {
         padding: 48px 30px;
         display: flex;
@@ -187,7 +188,7 @@
         border-radius: 8px;
         background-color: #36464e;
         min-width: 172px;
-        
+
         &-field {
             min-width: 130px;
             border: none;
@@ -241,7 +242,11 @@
                 line-height: 76px;
             }
         }
-        
+
+        &__button {
+            width: 50%;
+        }
+
         &__content {
             padding: 64px 30px;
             display: grid;
@@ -265,12 +270,15 @@
             grid-area: email;
             margin-left: auto;
         }
-
     }
 }
 
 @media (min-width: 1024px) {
     .footer {
+
+        &__button {
+            width: 30%;
+        }
 
         &__content {
             display: flex;
@@ -280,7 +288,7 @@
 
         &__info {
             gap: 40px;
-            
+
         }
 
         &__links {
@@ -291,7 +299,6 @@
         &__email {
             margin-left: 30px;
         }
-
     }
 }
 
@@ -302,6 +309,10 @@
             margin: 0 auto;
             width: 1200px;
             padding: 32px 24px;
+        }
+
+        &__button {
+            width: auto;
         }
 
         &__content {
@@ -327,6 +338,5 @@
         &__email {
             margin-left: 30px;
         }
-
     }
 }
