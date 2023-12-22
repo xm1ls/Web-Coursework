@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", sans-serif;
   margin: 0;
@@ -270,15 +274,36 @@ button {
   min-height: 98px;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 5%;
+  width: fit-content;
+  animation-name: loop;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-duration: 14s;
+}
+.our-clients__list-wrapper {
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
 }
 .our-clients__item {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 32px;
+}
+.our-clients__fade {
+  position: absolute;
+  pointer-events: none;
+  inset: 0;
+  background: linear-gradient(90deg, #FFF, transparent 20%, transparent 80%, #FFF);
 }
 
+@media (min-width: 768px) {
+  .our-clients__item {
+    margin-right: 64px;
+  }
+}
 @media (min-width: 1200px) {
   .our-clients__inner {
     margin: 0 auto;
@@ -293,6 +318,14 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+@keyframes loop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-25%);
   }
 }
 .community {
