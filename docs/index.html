@@ -62,7 +62,7 @@
             <div class="hero__description">
                 <p class="hero__description-text">Where to grow your business as a photographer: site or social media?</p>
             </div>
-            <button class="hero__button">Register</button>
+            <button class="hero__button" type="button" data-modal-open>Register</button>
         </div>
         <div class="hero__illustration">
             <img class="hero__illustration-image" src="svg/Illustration.svg" alt="hero illustration">
@@ -597,6 +597,30 @@
     </div>
 </footer>
 
+    <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <a class="modal__button--close" data-modal-close></a>
+        <div class="modal__title">
+            <p class="modal__title-text">Register</p>
+        </div>
+        <form class="modal__form">
+            <div class="modal__contact">
+                <label for="name" class="modal__label">Name</label>
+                <input id="name" name="name" class="modal__input" type="text" required placeholder="John">
+            </div>
+            <div class="modal__contact">
+                <label for="email" class="modal__label">Email Address</label>
+                <input id="email" name="email" class="modal__input" type="email" required placeholder="john@email.com">
+            </div>
+            <div class="modal__contact">
+                <label for="comment" class="modal__label">Message</label>
+                <textarea id="comment" rows="5" cols="30" name="comment" placeholder="Your message"
+                    class="modal__textarea"></textarea>
+            </div>
+            <input type="submit" class="modal__button" value="Register"></input>
+        </form>
+    </div>
+</div>
     <script src="js/app.min.js"></script>
 </body>
 

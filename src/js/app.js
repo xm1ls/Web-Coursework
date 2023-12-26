@@ -5,3 +5,5 @@ import * as jquery from './counter/jquery.min.js';
 import * as jquery_easing from './counter/jquery.easing.js';
 import * as counter from './counter/counter.min.js';
 import count from './counter/count.js';
+
+import modal from './modal/modal.js';
