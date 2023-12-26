@@ -586,9 +586,9 @@
             </div>
             <div class="footer__email">
                 <h4 class="footer__email-title">Stay up to date</h4>
-                <div class="footer__input">
+                <div class="footer__input" data-modal-open>
                     <input class="footer__input-field" type="text" placeholder="Your email address">
-                    <button class="footer__input-button">
+                    <button class="footer__input-button" type="button">
                         <img class="footer__input-button-image" src="svg/send.svg" width="18" height="18" alt="send icon">
                     </button>
                 </div>
@@ -606,7 +606,7 @@
         <form class="modal__form">
             <div class="modal__contact">
                 <label for="name" class="modal__label">Name</label>
-                <input id="name" name="name" class="modal__input" type="text" required placeholder="John">
+                <input data-input-field id="name" name="name" class="modal__input" type="text" required placeholder="John">
             </div>
             <div class="modal__contact">
                 <label for="email" class="modal__label">Email Address</label>
