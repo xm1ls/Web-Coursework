@@ -8,3 +8,6 @@ import count from './counter/count.js';
 
 import modal from './modal/modal.js';
 import send_message from './modal/send_message.js';
+
+import Swiper from './swiper/swiper-bundle.min.js';
+import community_updates_swiper from './swiper/community_updates_swiper.js';

@@ -35,15 +35,14 @@
         }
     }
 
-    &__list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 32px;
-    }
+    // &__list {
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     gap: 32px;
+    // }
 
     &__item {
-        width: 100%;
         max-width: 368px;
         display: flex;
         flex-direction: column;
@@ -87,6 +86,24 @@
         }
 
         &:nth-child(3) {
+            .community-updates__image {
+                background-image: url("../img/community-updates-2.jpg");
+            }
+        }
+
+        &:nth-child(4) {
+            .community-updates__image {
+                background-image: url("../img/community-updates.jpg");
+            }
+        }
+
+        &:nth-child(5) {
+            .community-updates__image {
+                background-image: url("../img/community-updates-1.jpg");
+            }
+        }
+
+        &:nth-child(6) {
             .community-updates__image {
                 background-image: url("../img/community-updates-2.jpg");
             }
@@ -138,12 +155,11 @@
             max-width: 628px;
         }
 
-        &__list {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-        }
-
+        // &__list {
+        //     flex-direction: row;
+        //     flex-wrap: wrap;
+        //     justify-content: space-evenly;
+        // }
     }
 }
 
@@ -156,9 +172,39 @@
             padding: 48px 24px 96px;
         }
 
-        &__list {
-            flex-wrap: nowrap;
-            justify-content: space-between;
+        // &__list {
+        //     flex-wrap: nowrap;
+        //     justify-content: space-between;
+        // }
+    }
+}
+
+.swiper {
+    padding-bottom: 20px;
+    max-width: 368px;
+    
+    &-slide {
+        padding: 20px;
+
+    }
+
+    &-pagination {
+        --swiper-pagination-bottom: 0;
+
+        &-bullet-active {
+            background-color: v.getColor(brand-primary);
         }
+    }
+}
+
+@media (min-width: 768px) {
+    .swiper {
+        max-width: 736px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .swiper {
+        max-width: 1004px;
     }
 }
