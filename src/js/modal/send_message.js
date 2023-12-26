@@ -16,8 +16,31 @@ function sendMessage(event) {
     api.send();
 
     document.querySelector("[data-modal]").classList.toggle("is-hidden");
+
+    document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('message').value = '';
+
+    showPopup();
+    setTimeout(closePopup, 3000);
 }
 
 let form = document.getElementById("form");
 form.addEventListener('submit', sendMessage);
+document.addEventListener("DOMContentLoaded", closePopup);
 
+function showPopup() {
+    var popup = document.getElementById("registrationPopup");
+    popup.style.display = "block";
+    setTimeout(function () {
+        popup.style.opacity = "1";
+    }, 10);
+}
+
+function closePopup() {
+    var popup = document.getElementById("registrationPopup");
+    popup.style.opacity = "0";
+    setTimeout(function () {
+        popup.style.display = "none";
+    }, 300);
+}

@@ -1379,3 +1379,19 @@ button {
     width: 35%;
   }
 }
+.popup {
+  display: none;
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  background-color: #4CAF4F;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease-in-out;
+}
+.popup__text {
+  text-align: center;
+  color: #F5F7FA;
+  font-size: 14px;
+}

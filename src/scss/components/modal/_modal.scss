@@ -171,3 +171,21 @@
         width: 35%;
     }
 }
+
+.popup {
+    display: none;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    background-color: v.getColor(brand-primary);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease-in-out;
+
+    &__text {
+        text-align: center;
+        color: v.getColor(neatural-silver);
+        font-size: 14px;
+    }
+}
