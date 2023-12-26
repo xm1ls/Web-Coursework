@@ -7,3 +7,4 @@ import * as counter from './counter/counter.min.js';
 import count from './counter/count.js';
 
 import modal from './modal/modal.js';
+import send_message from './modal/send_message.js';

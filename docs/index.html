@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/files/triangle-64.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +13,7 @@
 
     <link rel="stylesheet" href="css/style.min.css">
 
-    <title>Coursework</title>
+    <title>Nexcent</title>
 </head>
 
 <body>
@@ -603,7 +604,7 @@
         <div class="modal__title">
             <p class="modal__title-text">Register</p>
         </div>
-        <form class="modal__form">
+        <form id="form" name="form" class="modal__form">
             <div class="modal__contact">
                 <label for="name" class="modal__label">Name</label>
                 <input data-input-field id="name" name="name" class="modal__input" type="text" required placeholder="John">
@@ -613,8 +614,8 @@
                 <input id="email" name="email" class="modal__input" type="email" required placeholder="john@email.com">
             </div>
             <div class="modal__contact">
-                <label for="comment" class="modal__label">Message</label>
-                <textarea id="comment" rows="5" cols="30" name="comment" placeholder="Your message"
+                <label for="message" class="modal__label">Message</label>
+                <textarea id="message" rows="5" cols="30" name="message" placeholder="Your message"
                     class="modal__textarea"></textarea>
             </div>
             <input type="submit" class="modal__button" value="Register"></input>
