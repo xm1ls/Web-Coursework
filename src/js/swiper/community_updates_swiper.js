@@ -3,7 +3,6 @@ let swiper = new Swiper('.swiper', {
     loop: false,
 
     breakpoints: {
-
         0: {
             slidesPerView: 1,
             slidesPerGroup: 1,

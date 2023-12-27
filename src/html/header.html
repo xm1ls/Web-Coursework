@@ -27,8 +27,42 @@
             </ul>
         </nav>
         <div class="header__button-wrapper">
-            <button class="header__button--login">Login</button>
-            <button class="header__button--signup">Sign up</button>
+            <button class="header__button--login header__button">Login</button>
+            <button class="header__button--signup header__button">Sign up</button>
+        </div>
+        <button class="header__button--burger" burger-open>
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+    </div>
+    <div class="burger is-hidden" burger-menu>
+        <a class="burger__button--close" burger-close></a>
+        <nav class="burger__menu">
+            <ul class="burger__menu-list">
+                <li class="burger__menu-item">
+                    <a href="#hero" class="burger__menu-link" burger-close>Home</a>
+                </li>
+                <li class="burger__menu-item">
+                    <a href="#our-clients" class="burger__menu-link" burger-close>Service</a>
+                </li>
+                <li class="burger__menu-item">
+                    <a href="#community" class="burger__menu-link" burger-close>Feature</a>
+                </li>
+                <li class="burger__menu-item">
+                    <a href="#unlock" class="burger__menu-link" burger-close>Product</a>
+                </li>
+                <li class="burger__menu-item">
+                    <a href="#achievements" class="burger__menu-link" burger-close>Testimonial</a>
+                </li>
+                <li class="burger__menu-item">
+                    <a href="#calendar" class="burger__menu-link" burger-close>FAQ</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="burger__button-wrapper">
+            <button class="header__button--login header__button">Login</button>
+            <button class="header__button--signup header__button">Sign up</button>
         </div>
     </div>
 </header>

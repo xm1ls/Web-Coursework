@@ -10,3 +10,5 @@ import modal from './modal/modal.js';
 import send_message from './modal/send_message.js';
 
 import community_updates_swiper from './swiper/community_updates_swiper.js';
+
+import burger from './burger/burger.js';
