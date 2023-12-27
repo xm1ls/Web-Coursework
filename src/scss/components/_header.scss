@@ -2,6 +2,13 @@
 
 .header {
     background-color: v.getColor(neatural-silver);
+    
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: top 0.3s;
 
     &__inner {
         height: 84px;

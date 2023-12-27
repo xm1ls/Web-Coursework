@@ -12,3 +12,4 @@ import send_message from './modal/send_message.js';
 import community_updates_swiper from './swiper/community_updates_swiper.js';
 
 import burger from './burger/burger.js';
+import header_scroll from './header/header_scroll.js';

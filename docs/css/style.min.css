@@ -46,6 +46,12 @@ button {
 
 .header {
   background-color: #F5F7FA;
+  width: 100%;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: top 0.3s;
 }
 .header__inner {
   height: 84px;
@@ -211,6 +217,7 @@ button {
 
 .hero {
   background-color: #F5F7FA;
+  margin-top: 84px;
 }
 .hero__inner {
   padding: 60px 30px;
