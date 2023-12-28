@@ -182,7 +182,8 @@
 .swiper {
     padding-bottom: 20px;
     max-width: 368px;
-    
+    z-index: 0;
+
     &-slide {
         padding: 20px;
 

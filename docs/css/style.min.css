@@ -215,6 +215,11 @@ button {
   transform: translateX(100%);
 }
 
+@media (min-width: 768px) {
+  .burger__button-wrapper {
+    display: none;
+  }
+}
 .hero {
   background-color: #F5F7FA;
   margin-top: 84px;
@@ -1056,6 +1061,7 @@ button {
 .swiper {
   padding-bottom: 20px;
   max-width: 368px;
+  z-index: 0;
 }
 .swiper-slide {
   padding: 20px;

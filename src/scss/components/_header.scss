@@ -221,3 +221,15 @@
 .burger.is-hidden {
     transform: translateX(100%);
 }
+
+@media (min-width: 768px) {
+    .burger {
+
+        &__button {
+
+            &-wrapper {
+                display: none;
+            }
+        }
+    }
+}
