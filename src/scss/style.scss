@@ -1,19 +1,9 @@
-body {
-    background-color: black;
-    span {
-        color: white;
-    }
-    background: url('@img/870886.jpg') 0 0 no-repeat;
-}
+@use 'base/body';
+@use 'base/reset';
 
-@media (max-width: 768px) {
-    span {
-        color: red;
-    }
-}
+@use 'utils/variables';
 
-@media (max-width: 768px) {
-    body {
-        background-color: #fff;
-    }
-}
+@use 'components/header';
+@use 'components/main';
+@use 'components/footer';
+@use 'components/modal/modal';

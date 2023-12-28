@@ -1,0 +1,13 @@
+$colors: (
+    'neatural-white': #FFF,
+    'neatural-black': #263238,
+    'neatural-silver': #F5F7FA,
+    'neatural-grey': #717171,
+    'neatural-d-grey': #4D4D4D,
+    'neatural-l-grey': #89939E,
+    'brand-primary': #4CAF4F,
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+};

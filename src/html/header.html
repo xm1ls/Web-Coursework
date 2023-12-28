@@ -1,3 +1,68 @@
-<header>
-    <img src="@img/870886.jpg">
+<header class="header">
+    <div class="header__inner">
+        <a class="header__logo" href="#">
+            <img src="svg/logo.svg" width="35" height="24" alt="logo">
+            <img src="svg/logo-title.svg" width="112" height="22" alt="logo text">
+        </a>
+        <nav class="header__menu">
+            <ul class="header__menu-list">
+                <li class="header__menu-item">
+                    <a href="#hero" class="header__menu-link">Home</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#our-clients" class="header__menu-link">Service</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#community" class="header__menu-link">Feature</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#unlock" class="header__menu-link">Product</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#achievements" class="header__menu-link">Testimonial</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#calendar" class="header__menu-link">FAQ</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__button-wrapper">
+            <button class="header__button--login header__button" type="button" data-modal-open>Login</button>
+            <button class="header__button--signup header__button" type="button" data-modal-open>Sign up</button>
+        </div>
+        <button class="header__button--burger" burger-open>
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+    </div>
+    <div class="burger is-hidden" burger-menu>
+        <a class="burger__button--close" burger-close></a>
+        <nav class="burger__menu">
+            <ul class="burger__menu-list">
+                <li class="burger__menu-item">
+                    <a href="#hero" class="burger__menu-link" burger-close>Home</a>
+                </li>
+                <li class="burger__menu-item">
+                    <a href="#our-clients" class="burger__menu-link" burger-close>Service</a>
+                </li>
+                <li class="burger__menu-item">
+                    <a href="#community" class="burger__menu-link" burger-close>Feature</a>
+                </li>
+                <li class="burger__menu-item">
+                    <a href="#unlock" class="burger__menu-link" burger-close>Product</a>
+                </li>
+                <li class="burger__menu-item">
+                    <a href="#achievements" class="burger__menu-link" burger-close>Testimonial</a>
+                </li>
+                <li class="burger__menu-item">
+                    <a href="#calendar" class="burger__menu-link" burger-close>FAQ</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="burger__button-wrapper">
+            <button class="header__button--login header__button" type="button" data-modal-open>Login</button>
+            <button class="header__button--signup header__button" type="button" data-modal-open>Sign up</button>
+        </div>
+    </div>
 </header>

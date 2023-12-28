@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/img/triangle-64.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <title>Nexcent</title>
+</head>
+
+<body>
+    <header class="header">
+    <div class="header__inner">
+        <a class="header__logo" href="#">
+            <img src="svg/logo.svg" width="35" height="24" alt="logo">
+            <img src="svg/logo-title.svg" width="112" height="22" alt="logo text">
+        </a>
+        <nav class="header__menu">
+            <ul class="header__menu-list">
+                <li class="header__menu-item">
+                    <a href="#hero" class="header__menu-link">Home</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#our-clients" class="header__menu-link">Service</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#community" class="header__menu-link">Feature</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#unlock" class="header__menu-link">Product</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#achievements" class="header__menu-link">Testimonial</a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="#calendar" class="header__menu-link">FAQ</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__button-wrapper">
+            <button class="header__button--login header__button" type="button" data-modal-open>Login</button>
+            <button class="header__button--signup header__button" type="button" data-modal-open>Sign up</button>
+        </div>
+        <button class="header__button--burger" burger-open>
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+    </div>
+    <div class="burger is-hidden" burger-menu>
+        <a class="burger__button--close" burger-close></a>
+        <nav class="burger__menu">
+            <ul class="burger__menu-list">
+                <li class="burger__menu-item">
+                    <a href="#hero" class="burger__menu-link" burger-close>Home</a>
+                </li>
+                <li class="burger__menu-item">
+                    <a href="#our-clients" class="burger__menu-link" burger-close>Service</a>
+                </li>
+                <li class="burger__menu-item">
+                    <a href="#community" class="burger__menu-link" burger-close>Feature</a>
+                </li>
+                <li class="burger__menu-item">
+                    <a href="#unlock" class="burger__menu-link" burger-close>Product</a>
+                </li>
+                <li class="burger__menu-item">
+                    <a href="#achievements" class="burger__menu-link" burger-close>Testimonial</a>
+                </li>
+                <li class="burger__menu-item">
+                    <a href="#calendar" class="burger__menu-link" burger-close>FAQ</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="burger__button-wrapper">
+            <button class="header__button--login header__button" type="button" data-modal-open>Login</button>
+            <button class="header__button--signup header__button" type="button" data-modal-open>Sign up</button>
+        </div>
+    </div>
+</header>
+    <main>
+    <section class="hero" id="hero">
+    <div class="hero__inner">
+        <div class="hero__text">
+            <div class="hero__title">
+                <h1 class="hero__title-text">Lessons and insights 
+                    <span class="hero__title-text--accent">from 8 years</span>
+                </h1>
+            </div>
+            <div class="hero__description">
+                <p class="hero__description-text">Where to grow your business as a photographer: site or social media?</p>
+            </div>
+            <button class="hero__button" type="button" data-modal-open>Register</button>
+        </div>
+        <div class="hero__illustration">
+            <img class="hero__illustration-image" src="svg/Illustration.svg" alt="hero illustration">
+        </div>
+    </div>
+</section>
+    <section class="out-clients" id="our-clients">
+    <div class="our-clients__inner">
+        <div class="our-clients__text">
+            <div class="our-clients__title">
+                <h2 class="our-clients__title-text">Our Clients</h2>
+            </div>
+            <div class="our-clients__description">
+                <p class="our-clients__description-text">We have been working with some Fortune 500+ clients</p>
+            </div>
+        </div>
+        <div class="our-clients__list-wrapper">
+
+            <ul class="our-clients__list">
+                <li class="our-clients__item">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <use href="svg/clients.svg#client-1"></use>
+                    </svg>
+                </li>
+                <li class="our-clients__item">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <use href="svg/clients.svg#client-2"></use>
+                    </svg>
+                </li>
+                <li class="our-clients__item">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <use href="svg/clients.svg#client-3"></use>
+                    </svg>
+                </li>
+                <li class="our-clients__item">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <use href="svg/clients.svg#client-4"></use>
+                    </svg>
+                </li>
+                <li class="our-clients__item">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <use href="svg/clients.svg#client-5"></use>
+                    </svg>
+                </li>
+                <li class="our-clients__item">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <use href="svg/clients.svg#client-6"></use>
+                    </svg>
+                </li>
+                <li class="our-clients__item">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <use href="svg/clients.svg#client-7"></use>
+                    </svg>
+                </li>
+    
+                <li class="our-clients__item">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <use href="svg/clients.svg#client-1"></use>
+                    </svg>
+                </li>
+                <li class="our-clients__item">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <use href="svg/clients.svg#client-2"></use>
+                    </svg>
+                </li>
+                <li class="our-clients__item">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <use href="svg/clients.svg#client-3"></use>
+                    </svg>
+                </li>
+                <li class="our-clients__item">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <use href="svg/clients.svg#client-4"></use>
+                    </svg>
+                </li>
+                <li class="our-clients__item">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <use href="svg/clients.svg#client-5"></use>
+                    </svg>
+                </li>
+                <li class="our-clients__item">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <use href="svg/clients.svg#client-6"></use>
+                    </svg>
+                </li>
+                <li class="our-clients__item">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <use href="svg/clients.svg#client-7"></use>
+                    </svg>
+                </li>
+                
+                <li class="our-clients__item">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <use href="svg/clients.svg#client-1"></use>
+                    </svg>
+                </li>
+                <li class="our-clients__item">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <use href="svg/clients.svg#client-2"></use>
+                    </svg>
+                </li>
+                <li class="our-clients__item">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <use href="svg/clients.svg#client-3"></use>
+                    </svg>
+                </li>
+                <li class="our-clients__item">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <use href="svg/clients.svg#client-4"></use>
+                    </svg>
+                </li>
+                <li class="our-clients__item">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <use href="svg/clients.svg#client-5"></use>
+                    </svg>
+                </li>
+                <li class="our-clients__item">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <use href="svg/clients.svg#client-6"></use>
+                    </svg>
+                </li>
+                <li class="our-clients__item">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <use href="svg/clients.svg#client-7"></use>
+                    </svg>
+                </li>
+
+                <li class="our-clients__item">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <use href="svg/clients.svg#client-1"></use>
+                    </svg>
+                </li>
+                <li class="our-clients__item">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <use href="svg/clients.svg#client-2"></use>
+                    </svg>
+                </li>
+                <li class="our-clients__item">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <use href="svg/clients.svg#client-3"></use>
+                    </svg>
+                </li>
+                <li class="our-clients__item">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <use href="svg/clients.svg#client-4"></use>
+                    </svg>
+                </li>
+                <li class="our-clients__item">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <use href="svg/clients.svg#client-5"></use>
+                    </svg>
+                </li>
+                <li class="our-clients__item">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <use href="svg/clients.svg#client-6"></use>
+                    </svg>
+                </li>
+                <li class="our-clients__item">
+                    <svg width="48" height="48" viewBox="0 0 48 48">
+                        <use href="svg/clients.svg#client-7"></use>
+                    </svg>
+                </li>
+            </ul>
+            <div class="our-clients__fade"></div>
+        </div>
+    </div>
+</section>
+    <section class="community" id="community">
+    <div class="community__inner">
+        <div class="community__text">
+            <div class="community__title">
+                <h2 class="community__title-text">Manage your entire community in a single system</h2>
+            </div>
+            <div class="community__description">
+                <p class="community__description-text">Who is Nextcent suitable for?
+                </p>
+            </div>
+        </div>
+        <ul class="community__list">
+            <li class="community__item">
+                <img class="community__item-image" src="svg/member-1.svg" width="65" height="56" alt="suitable">
+                <div class="community__item-title">
+                    <h2 class="community__item-title-text">Membership Organisations</h2>
+                </div>
+                <div class="community__item-description">
+                    <p class="community__item-description-text">Our membership management software
+                        provides full automation of membership renewals and payments</p>
+                </div>
+            </li>
+            <li class="community__item">
+                <img class="community__item-image" src="svg/member-2.svg" width="65" height="56" alt="suitable-1">
+                <div class="community__item-title">
+                    <h2 class="community__item-title-text">National Associations</h2>
+                </div>
+                <div class="community__item-description">
+                    <p class="community__item-description-text">Our membership management software
+                        provides full automation of membership renewals and payments</p>
+                </div>
+            </li>
+            <li class="community__item">
+                <img class="community__item-image" src="svg/member-3.svg" width="65" height="56" alt="suitable-2">
+                <div class="community__item-title">
+                    <h2 class="community__item-title-text">Clubs And Groups</h2>
+                </div>
+                <div class="community__item-description">
+                    <p class="community__item-description-text">Our membership management software
+                        provides full automation of membership renewals and payments</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+    <section class="unlock" id="unlock">
+    <div class="unlock__inner">
+        <div class="unlock__illustration">
+            <img class="unlock__illustration-image" src="svg/rafiki.svg" alt="unlock-illustration">
+        </div>
+        <div class="unlock__text">
+            <div class="unlock__title">
+                <h2 class="unlock__title-text">The unseen of spending three years at Pixelgrade</h2>
+            </div>
+            <div class="unlock__description">
+                <p class="unlock__description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    sit amet justo ipsum. Sed
+                    accumsan
+                    quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam
+                    mattis
+                    tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar,
+                    aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
+            </div>
+                
+            <button class="unlock__button" type="button" data-modal-open>Learn More</button>
+        </div>
+    </div>
+</section>
+    <section class="achievements" id="achievements">
+    <div class="achievements__inner">
+        <div class="achievements__text">
+            <div class="achievements__title">
+                <h1 class="achievements__title-text">Helping a local
+                    <span class="achievements__title-text--accent">business reinvent itself</span>
+                </h1>
+            </div>
+            <div class="achievements__description">
+                <p class="achievements__description-text">We reached here with our hard work and dedication</p>
+            </div>
+        </div>
+
+        <ul class="achievements__list">
+            <div class="achievements__row">
+                <li class="achievements__item">
+                    <img class="achievements__item-image" src="svg/ach-icon.svg" width="48" height="48">
+                    <div class="achievements__item-text">
+                        <h3 class="achievements__count" id="achievements-members"></h3>
+                        <p class="achievements__item-description">Members</p>
+                    </div>
+                </li>
+                <li class="achievements__item">
+                    <img class="achievements__item-image" src="svg/ach-icon1.svg" width="48" height="48">
+                    <div class="achievements__item-text">
+                        <h3 class="achievements__count" id="achievements-clubs"></h3>
+                        <p class="achievements__item-description">Clubs</p>
+                    </div>
+                </li>
+            </div>
+            <div class="achievements__row">
+                <li class="achievements__item">
+                    <img class="achievements__item-image" src="svg/ach-icon2.svg" width="48" height="48">
+                    <div class="achievements__item-text">
+                        <h3 class="achievements__count" id="achievements-bookings"></h3>
+                        <p class="achievements__item-description">Event Bookings</p>
+                    </div>
+                </li>
+                <li class="achievements__item">
+                    <img class="achievements__item-image" src="svg/ach-icon3.svg" width="48 height=" 348>
+                    <div class="achievements__item-text">
+                        <h3 class="achievements__count" id="achievements-payments"></h3>
+                        <p class="achievements__item-description">Payments</p>
+                    </div>
+                </li>
+            </div>
+        </ul>
+    </div>
+</section>
+    <section class="calendar" id="calendar">
+    <div class="calendar__inner">
+        <div class="calendar__image">
+            <img src="svg/pana.svg" alt="calendar image">
+        </div>
+        <div class="calendar__text">
+            <div class="calendar__title">
+                <h2 class="calendar__title-text">How to design your site footer like we did</h2>
+            </div>
+            <div class="calendar__description">
+                <p class="calendar__description-text">Donec a eros justo. Fusce egestas tristique ultrices. Nam
+                    tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna.
+                    Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula
+                    leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet
+                    urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis
+                    est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id
+                    gravida.</p>
+            </div>
+            <button class="calendar__button" type="button" data-modal-open>Learn More</button>
+        </div>
+    </div>
+</section>
+    <section class="customer">
+    <div class="customer__inner">
+        <div class="customer__image"></div>
+        <div class="customer__text">
+            <div class="customer__description">
+                <p class="customer__description-text">
+                    Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus
+                    tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in,
+                    gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie,
+                    nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla
+                    sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque
+                    malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget
+                    efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.
+                </p>
+            </div>
+            <div class="customer__name">
+                <h4 class="customer__name-text">
+                    Tim Smith
+                </h4>
+            </div>
+            <div class="customer__association">
+                <p class="customer__association-text">
+                    British Dragon Boat Racing Association
+                </p>
+            </div>
+        </div>
+        <div class="customer__brand-wrapper">
+            <ul class="customer__list">
+                <li class="customer__item">
+                    <img src="svg/brand.svg" width="48" height="48" alt="customer">
+                </li>
+                <li class="customer__item">
+                    <img src="svg/brand1.svg" width="48" height="48" alt="customer 1">
+                </li>
+                <li class="customer__item">
+                    <img src="svg/brand2.svg" width="48" height="48" alt="customer 2">
+                </li>
+                <li class="customer__item">
+                    <img src="svg/brand3.svg" width="48" height="48" alt="customer 3">
+                </li>
+                <li class="customer__item">
+                    <img src="svg/brand4.svg" width="48" height="48" alt="customer 4">
+                </li>
+                <li class="customer__item">
+                    <img src="svg/brand5.svg" width="48" height="48" alt="customer 5">
+                </li>
+            </ul>
+            <div class="customer__button">
+                <a class="customer__link" data-modal-open>
+                    <p class="customer__link-text">Meet all customers</p>
+                    <img src="svg/green-arrow.svg" width="24" height="24" alt="green arrow">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="community-updates">
+    <div class="community-updates__inner">
+        <div class="community-updates__text">
+            <div class="community-updates__title">
+                <h2 class="community-updates__title-text">
+                    Caring is the new marketing
+                </h2>
+            </div>
+            <div class="community-updates__description">
+                <p class="community-updates__description-text">
+                    The Nexcent blog is the best place to read about the latest membership insights, trends and more.
+                    See who's joining the community, read about how our community are increasing their membership income
+                    and lot's more.​
+                </p>
+            </div>
+        </div>
+        <div class="swiper">
+            <ul class="swiper-wrapper"> <!--community-updates__list-->
+                <li class="swiper-slide community-updates__item">
+                    <div class="community-updates__image"></div>
+                    <div class="community-updates__item-content">
+                        <div class="community-updates__item-title">
+                            <p class="community-updates__item-title-text">
+                                Creating Streamlined Safeguarding Processes with OneRen
+                            </p>
+                        </div>
+                        <div class="community-updates__button">
+                            <a class="community-updates__link" data-modal-open>
+                                <p class="community-updates__link-text">Readmore</p>
+                                <img src="svg/green-arrow.svg" width="24" height="24" alt="green arrow">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="swiper-slide community-updates__item">
+                    <div class="community-updates__image"></div>
+                    <div class="community-updates__item-content">
+                        <div class="community-updates__item-title">
+                            <p class="community-updates__item-title-text">
+                                Creating Streamlined Safeguarding Processes with OneRen
+                            </p>
+                        </div>
+                        <div class="community-updates__button">
+                            <a class="community-updates__link" data-modal-open>
+                                <p class="community-updates__link-text">Readmore</p>
+                                <img src="svg/green-arrow.svg" width="24" height="24" alt="green arrow">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="swiper-slide community-updates__item">
+                    <div class="community-updates__image"></div>
+                    <div class="community-updates__item-content">
+                        <div class="community-updates__item-title">
+                            <p class="community-updates__item-title-text">
+                                Creating Streamlined Safeguarding Processes with OneRen
+                            </p>
+                        </div>
+                        <div class="community-updates__button">
+                            <a class="community-updates__link" data-modal-open>
+                                <p class="community-updates__link-text">Readmore</p>
+                                <img src="svg/green-arrow.svg" width="24" height="24" alt="green arrow">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="swiper-slide community-updates__item">
+                    <div class="community-updates__image"></div>
+                    <div class="community-updates__item-content">
+                        <div class="community-updates__item-title">
+                            <p class="community-updates__item-title-text">
+                                Creating Streamlined Safeguarding Processes with OneRen
+                            </p>
+                        </div>
+                        <div class="community-updates__button">
+                            <a class="community-updates__link" data-modal-open>
+                                <p class="community-updates__link-text">Readmore</p>
+                                <img src="svg/green-arrow.svg" width="24" height="24" alt="green arrow">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="swiper-slide community-updates__item">
+                    <div class="community-updates__image"></div>
+                    <div class="community-updates__item-content">
+                        <div class="community-updates__item-title">
+                            <p class="community-updates__item-title-text">
+                                Creating Streamlined Safeguarding Processes with OneRen
+                            </p>
+                        </div>
+                        <div class="community-updates__button">
+                            <a class="community-updates__link" data-modal-open>
+                                <p class="community-updates__link-text">Readmore</p>
+                                <img src="svg/green-arrow.svg" width="24" height="24" alt="green arrow">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="swiper-slide community-updates__item">
+                    <div class="community-updates__image"></div>
+                    <div class="community-updates__item-content">
+                        <div class="community-updates__item-title">
+                            <p class="community-updates__item-title-text">
+                                Creating Streamlined Safeguarding Processes with OneRen
+                            </p>
+                        </div>
+                        <div class="community-updates__button">
+                            <a class="community-updates__link" data-modal-open>
+                                <p class="community-updates__link-text">Readmore</p>
+                                <img src="svg/green-arrow.svg" width="24" height="24" alt="green arrow">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+</main>
+    <footer class="footer">
+    <div class="footer__text-wrapper">
+        <section class="footer__text">
+            <div class="footer__title">
+                <h1 class="footer__title-text">
+                    Pellentesque suscipit fringilla libero eu.
+                </h1>
+            </div>
+            <button class="footer__button" data-modal-open>
+                <p class="footer__button-text">Get a Demo</p>
+                <img src="svg/arrow.svg" width="24" height="24" alt="green arrow">
+            </button>
+        </section>
+    </div>
+    <div class="footer__content-wrapper">
+        <section class="footer__content">
+            <div class="footer__info">
+                <div class="footer__logo">
+                    <img src="svg/Icon.svg" alt="footer logo">
+                    <img src="svg/Nexcent.svg" alt="footer logo text">
+                </div>
+                <div class="footer__copyright">
+                    <p class="footer__copyright-text">Copyright © 2020 Nexcent ltd.</p>
+                    <p class="footer__copyright-text">All rights reserved</p>
+                </div>
+                <ul class="footer__socials">
+                    <li class="footer__socials-item">
+                        <a href="" class="footer__socials-link">
+                            <img src="svg/Social Icons.svg" width="32" height="32" alt="instagram icon">
+                        </a>
+                    </li>
+                    <li class="footer__socials-item">
+                        <a href="" class="footer__socials-link">
+                            <img src="svg/Social Icons-1.svg" width="32" height="32" alt="dribble icon">
+                        </a>
+                    </li>
+                    <li class="footer__socials-item">
+                        <a href="" class="footer__socials-link">
+                            <img src="svg/Social Icons-2.svg" width="32" height="32" alt="twitter icon">
+                        </a>
+                    </li>
+                    <li class="footer__socials-item">
+                        <a href="" class="footer__socials-link">
+                            <img src="svg/Social Icons-3.svg" width="32" height="32" alt="youtube icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__links">
+                <div class="footer__company">
+                    <h4 class="footer__company-title">Company</h4>
+                    <ul class="footer__company-list">
+                        <li class="footer__company-item">
+                            <a href="" class="footer__company-item-link">About us</a>
+                        </li>
+                        <li class="footer__company-item">
+                            <a href="" class="footer__company-item-link">Blog</a>
+                        </li>
+                        <li class="footer__company-item">
+                            <a href="" class="footer__company-item-link">Contact us</a>
+                        </li>
+                        <li class="footer__company-item">
+                            <a href="" class="footer__company-item-link">Pricing</a>
+                        </li>
+                        <li class="footer__company-item">
+                            <a href="" class="footer__company-item-link">Testimonials</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__support">
+                    <h4 class="footer__support-title">Support</h4>
+                    <ul class="footer__support-list">
+                        <li class="footer__support-item">
+                            <a href="" class="footer__support-item-link">Help center</a>
+                        </li>
+                        <li class="footer__support-item">
+                            <a href="" class="footer__support-item-link">Terms of service</a>
+                        </li>
+                        <li class="footer__support-item">
+                            <a href="" class="footer__support-item-link">Legal</a>
+                        </li>
+                        <li class="footer__support-item">
+                            <a href="" class="footer__support-item-link">Privacy policy</a>
+                        </li>
+                        <li class="footer__support-item">
+                            <a href="" class="footer__support-item-link">Status</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__email">
+                <h4 class="footer__email-title">Stay up to date</h4>
+                <div class="footer__input" data-modal-open>
+                    <input class="footer__input-field" type="text" placeholder="Your email address">
+                    <button class="footer__input-button" type="button">
+                        <img class="footer__input-button-image" src="svg/send.svg" width="18" height="18" alt="send icon">
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+</footer>
+
+    <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <a class="modal__button--close" data-modal-close></a>
+        <div class="modal__title">
+            <p class="modal__title-text">Register</p>
+        </div>
+        <form id="form" name="form" class="modal__form">
+            <div class="modal__contact">
+                <label for="name" class="modal__label">Name</label>
+                <input data-input-field id="name" name="name" class="modal__input" type="text" required placeholder="John">
+            </div>
+            <div class="modal__contact">
+                <label for="email" class="modal__label">Email Address</label>
+                <input id="email" name="email" class="modal__input" type="email" required placeholder="john@email.com">
+            </div>
+            <div class="modal__contact">
+                <label for="message" class="modal__label">Message</label>
+                <textarea id="message" rows="5" cols="30" name="message" placeholder="Your message"
+                    class="modal__textarea"></textarea>
+            </div>
+            <input type="submit" class="modal__button" value="Register"></input>
+        </form>
+    </div>
+</div>
+
+<div class="popup" id="registrationPopup">
+    <div class="popup__text">
+        <p>Congratulations! You are registered.</p>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

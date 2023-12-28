@@ -8,13 +8,13 @@ export const svg = () => {
             message: "Error: <%= error.message %>"
         })
     ))
-    .pipe(svgSprite({
-        mode: {
-            stack: {
-                sprite: `../icons/icons.svg`,
-                expample: true
-            }
-        }
-    }))
-    .pipe(app.gulp.dest(`${app.path.build.images}`));
+    // .pipe(svgSprite({
+    //     mode: {
+    //         stack: {
+    //             sprite: `../icons/icons.svg`,
+    //             example: true
+    //         }
+    //     }
+    // }))
+    .pipe(app.gulp.dest(`${app.path.build.icons}`));
 }

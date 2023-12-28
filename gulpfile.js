@@ -28,10 +28,11 @@ function watcher() {
     gulp.watch(path.watch.scss, scss);
     gulp.watch(path.watch.js, js);
     gulp.watch(path.watch.images, images);
+    gulp.watch(path.watch.svgicons, svg);
 }
 
 const fonts = gulp.series(otfToTft, ttfToWoff, fontsStyle);
-const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images));
+const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images, svg));
 
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
 const build = gulp.series(reset, mainTasks);

@@ -1,0 +1,129 @@
+@use '../../utils/variables' as v;
+
+.unlock {
+    background-color: v.getColor(neatural-white);
+
+    &__inner {
+        padding: 0 30px 48px;
+    }
+
+    &__illustration {
+        display: none;
+
+        &-image {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__title {
+        margin-bottom: 16px;
+
+        &-text {
+            color: v.getColor(neatural-d-grey);
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 44px;
+        }
+    }
+
+    &__description {
+        margin-bottom: 32px;
+
+        &-text {
+            color: v.getColor(neatural-grey);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+        }
+    }
+
+    &__button {
+        width: 100%;
+        background-color: v.getColor(brand-primary);
+        color: v.getColor(neatural-white);
+
+        display: flex;
+        padding: 14px 32px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+
+        margin-bottom: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .unlock {
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            gap: 5%;
+        }
+
+        &__illustration {
+            display: flex;
+            min-width: 40%;
+        }
+
+        &__text {
+            max-width: 661px;
+            align-self: center;
+        }
+
+        &__title {
+            max-width: 601px;
+        }
+
+        &__description {
+            max-width: 601px;
+        }
+
+        &__button {
+            width: 50%;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .unlock {
+        &__button {
+            width: 30%;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .unlock {
+        &__inner {
+            margin: 0 auto;
+            width: 1200px;
+            padding: 0 24px;
+            padding-bottom: 42px;
+            gap: 0;
+        }
+
+        &__illustration {
+            max-width: 442px;
+            min-width: auto;
+            height: 433px;
+        }
+
+        &__text {
+            max-width: 661px;
+        }
+    }
+}
