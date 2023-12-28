@@ -34,7 +34,13 @@
             gap: 30px;
         }
 
-        // &-item { }
+        &-item {
+            transition: scale .3s ease-in-out;    
+
+            &:hover {
+                scale: 1.05;
+            }
+        }
 
         &-link {
             color: v.getColor(neatural-black);

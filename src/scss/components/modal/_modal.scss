@@ -28,7 +28,7 @@
     height: 100%;
     width: 100%;
 
-    padding: 20px;
+    padding: 30px;
 
     &__title {
         margin-bottom: 40px;
@@ -112,10 +112,16 @@
         border: none;
         cursor: pointer;
 
+        transition: scale .3s ease-in-out;
+
+        &:hover {
+            scale: 1.01;
+        }
+
         &--close {
             position: absolute;
-            top: 20px;
-            right: 20px;
+            top: 30px;
+            right: 30px;
             width: 24px;
             height: 24px;
             opacity: 1;

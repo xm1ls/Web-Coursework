@@ -88,7 +88,13 @@
         display: flex;
         gap: 16px;
 
-        // &-item {}
+        &-item {
+            transition: scale .3s ease-in-out;
+
+            &:hover {
+                scale: 1.05;
+            }
+        }
 
         // &-link {}
     }
@@ -122,6 +128,11 @@
     }
 
     &__company-item {
+        transition: scale .3s ease-in-out;
+
+        &:hover {
+            scale: 1.05;
+        }
 
         &-link {
             color: v.getColor(neatural-silver);
@@ -154,6 +165,11 @@
     }
 
     &__support-item {
+        transition: scale .3s ease-in-out;
+
+        &:hover {
+            scale: 1.05;
+        }
 
         &-link {
             color: v.getColor(neatural-silver);

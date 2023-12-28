@@ -8,6 +8,20 @@ body {
   padding: 0;
 }
 
+button {
+  transition: scale 0.3s ease-in-out;
+}
+button:hover {
+  scale: 1.05;
+}
+
+a {
+  transition: scale 0.3s ease-in-out;
+}
+a:hover {
+  scale: 1.05;
+}
+
 h1,
 h2,
 h3,
@@ -73,6 +87,12 @@ button {
 .header__menu-list {
   display: flex;
   gap: 30px;
+}
+.header__menu-item {
+  transition: scale 0.3s ease-in-out;
+}
+.header__menu-item:hover {
+  scale: 1.05;
 }
 .header__menu-link {
   color: #263238;
@@ -1155,6 +1175,12 @@ button {
   display: flex;
   gap: 16px;
 }
+.footer__socials-item {
+  transition: scale 0.3s ease-in-out;
+}
+.footer__socials-item:hover {
+  scale: 1.05;
+}
 .footer__links {
   width: fit-content;
   display: flex;
@@ -1178,6 +1204,12 @@ button {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+.footer__company-item {
+  transition: scale 0.3s ease-in-out;
+}
+.footer__company-item:hover {
+  scale: 1.05;
 }
 .footer__company-item-link {
   color: #F5F7FA;
@@ -1203,6 +1235,12 @@ button {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+.footer__support-item {
+  transition: scale 0.3s ease-in-out;
+}
+.footer__support-item:hover {
+  scale: 1.05;
 }
 .footer__support-item-link {
   color: #F5F7FA;
@@ -1369,7 +1407,7 @@ button {
   background-color: #F5F7FA;
   height: 100%;
   width: 100%;
-  padding: 20px;
+  padding: 30px;
 }
 .modal__title {
   margin-bottom: 40px;
@@ -1438,11 +1476,15 @@ button {
   line-height: 24px;
   border: none;
   cursor: pointer;
+  transition: scale 0.3s ease-in-out;
+}
+.modal__button:hover {
+  scale: 1.01;
 }
 .modal__button--close {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 30px;
+  right: 30px;
   width: 24px;
   height: 24px;
   opacity: 1;
